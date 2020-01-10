@@ -38,7 +38,7 @@ app.use(passport.session());
 
 //Passport Config
 
-require('../config/passport')(passport);
+require('../config/passport')(passport)
 
 //Connect Flash
 

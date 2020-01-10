@@ -12,7 +12,9 @@ const passport = require('passport');
 
 const app = express();
 
+//Passport Config
 
+require('../config/passport')
 
 //EJS
 
@@ -35,10 +37,6 @@ app.use(session({
 
 app.use(passport.initialize());
 app.use(passport.session());
-
-//Passport Config
-
-require('../config/passport')(passport);
 
 //Connect Flash
 
